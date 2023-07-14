@@ -6,8 +6,9 @@
   --accent-color: rgb(240, 170, 30);
   --background-main: rgb(255, 255, 255);
   --background-second: rgba(120, 120, 120, 0.7);
-  --background-dark:rgb(120, 120, 120);
+  --background-dark: rgb(120, 120, 120);
   --text-white: rgb(255, 255, 255);
+  --red-color: rgb(255, 0, 0);
 
   --font-family: "Pangolin", Arial, Helvetica, sans-serif;
 
@@ -264,6 +265,9 @@ img {
   grid-column: 1;
   grid-row: 1/5;
   background-color: var(--background-second);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 
   & .list {
     display: flex;
@@ -365,7 +369,7 @@ img {
     font-size: 14px;
     transition: var(--transition-function);
 
-    &.active{
+    &.active {
       background-color: var(--accent-color);
       border: 1px solid var(--accent-color);
     }
@@ -385,15 +389,72 @@ img {
 }
 
 .video {
-  display: block;
   grid-column: 2;
   grid-row: 3;
+  padding: 30px;
   background-color: blueviolet;
+  & .video-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  & .video-item {
+    position: relative;
+
+    & .live {
+      position: absolute;
+      top: 5px;
+      left: 5px;
+      padding: 3px;
+      border-radius: 3px;
+      background-color: var(--red-color);
+      color: var(--text-white);
+    }
+
+    & .duration {
+      position: absolute;
+      top: 175px;
+      right: 5px;
+      padding: 3px;
+      border-radius: 3px;
+      background-color: var(--background-second);
+      color: var(--text-white);
+    }
+  }
+
+  & .video-player {
+    width: 300px;
+    height: 200px;
+    background-color: white;
+  }
+
+  & .video-description {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  & .video-title {
+    width: 200px;
+    margin-bottom: 5px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    &:hover{
+      overflow: visible;
+    }
+  }
+
+  & .avatar {
+    width: 50px;
+  }
 }
 
 .footer {
-    grid-column: 2;
-      grid-row: 4;
+  grid-column: 2;
+  grid-row: 4;
   padding: 10px;
   display: flex;
   justify-content: center;
