@@ -1,11 +1,512 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pangolin&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="icon" href="./images/cat.png" />
+    <title>Bulka TV</title>
+  </head>
+
+  <body class="body">
+    <header class="header">
+      <img src="./images/cat.png" alt="logo" class="header__logo" />
+      <p class="header__title">Bulka TV</p>
+      <form action="" class="header__form">
+        <input type="text" placeholder="Search" class="header__input" />
+        <button type="submit" class="header__btn-submit">
+          <svg class="header__icon-glass">
+            <use href="./images/svg/symbol-defs.svg#icon-glass"></use>
+          </svg>
+        </button>
+        <button type="button" class="header__btn-microfon icon-btn">
+          <svg class="icon">
+            <use href="./images/svg/symbol-defs.svg#icon-microphone"></use>
+          </svg>
+        </button>
+      </form>
+      <button type="button" class="header__btn-notify icon-btn">
+        <svg class="icon">
+          <use href="./images/svg/symbol-defs.svg#icon-bell"></use>
+        </svg>
+      </button>
+      <div class="menu-box">
+        <button type="menu" class="menu__btn icon-btn">
+          <svg class="icon">
+            <use href="./images/svg/symbol-defs.svg#icon-cat-foot"></use>
+          </svg>
+        </button>
+        <ul class="menu-list">
+          <li class="menu-item">
+            <a href="/" class="link"
+              ><svg class="icon">
+                <use href="./images/svg/symbol-defs.svg#icon-cat-foot"></use>
+              </svg>
+              Profile</a
+            >
+          </li>
+          <li class="menu-item">
+            <a href="/" class="link">
+              <svg class="icon">
+                <use href="./images/svg/symbol-defs.svg#icon-setting"></use>
+              </svg>
+              Settings</a
+            >
+          </li>
+          <li class="menu-item">
+            <button class="btn-log-out">
+              <svg class="icon">
+                <use href="./images/svg/symbol-defs.svg#icon-logout"></use>
+              </svg>
+              Log Out
+            </button>
+          </li>
+        </ul>
+      </div>
+    </header>
+    <main class="main">
+      <aside class="main__side-panel">
+        <ul class="list">
+          <li class="list-item">
+            <div class="image-box">
+              <img
+                src="./images/avatar1.png"
+                alt="avatar"
+                width="50"
+                class="'avatar"
+              />
+            </div>
+            <p class="cat-name">NaNaNaNa</p>
+            <p class="follovers active">5.3 K</p>
+          </li>
+          <li class="list-item">
+            <div class="image-box">
+              <img
+                src="./images/avatar2.png"
+                alt="avatar"
+                width="50"
+                class="'avatar"
+              />
+            </div>
+            <p class="cat-name">LaLa</p>
+
+            <p class="follovers">5.3 K</p>
+          </li>
+          <li class="list-item">
+            <div class="image-box">
+              <img
+                src="./images/avatar3.png"
+                alt="avatar"
+                width="50"
+                class="'avatar"
+              />
+            </div>
+            <p class="cat-name">Nick</p>
+            <p class="follovers active">5.3 K</p>
+          </li>
+          <li class="list-item">
+            <div class="image-box">
+              <img
+                src="./images/avatar4.png"
+                alt="avatar"
+                width="50"
+                class="'avatar"
+              />
+            </div>
+            <p class="cat-name">King</p>
+            <p class="follovers active">5.3 K</p>
+          </li>
+          <li class="list-item">
+            <div class="image-box">
+              <img
+                src="./images/avatar5.png"
+                alt="avatar"
+                width="50"
+                class="'avatar"
+              />
+            </div>
+            <p class="cat-name">ToTo</p>
+            <p class="follovers">5.3 K</p>
+          </li>
+          <li class="list-item">
+            <div class="image-box">
+              <img
+                src="./images/avatar6.png"
+                alt="avatar"
+                width="50"
+                class="'avatar"
+              />
+            </div>
+            <p class="cat-name">DoDo</p>
+            <p class="follovers active">5.3 K</p>
+          </li>
+          <li class="list-item">
+            <div class="image-box">
+              <img
+                src="./images/avatar3.png"
+                alt="avatar"
+                width="50"
+                class="'avatar"
+              />
+            </div>
+            <p class="cat-name">ChuChu</p>
+            <p class="follovers">5.3 K</p>
+          </li>
+          <li class="list-item">
+            <div class="image-box">
+              <img
+                src="./images/avatar5.png"
+                alt="avatar"
+                width="50"
+                class="'avatar"
+              />
+            </div>
+            <p class="cat-name">CoCo</p>
+            <p class="follovers active">5.3 K</p>
+          </li>
+          <li class="list-item">
+            <div class="image-box">
+              <img
+                src="./images/avatar5.png"
+                alt="avatar"
+                width="50"
+                class="'avatar"
+              />
+            </div>
+            <p class="cat-name">CoCo</p>
+            <p class="follovers active">5.3 K</p>
+          </li>
+        </ul>
+        <div class="links">
+          <p class="links-text">Join the Bulka's community!</p>
+          <ul class="links-list">
+            <li class="links-item">
+              <a href="/" class="link">
+                <svg class="icon">
+                  <use href="./images/svg/symbol-defs.svg#icon-telegram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="links-item">
+              <a href="/" class="link">
+                <svg class="icon">
+                  <use href="./images/svg/symbol-defs.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="links-item">
+              <a href="/" class="link">
+                <svg class="icon">
+                  <use href="./images/svg/symbol-defs.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </aside>
+      <section class="categorys">
+        <ul class="categorys-list">
+          <li><button class="btn-category active">All</button></li>
+          <li><button class="btn-category">Food</button></li>
+          <li><button class="btn-category">Music</button></li>
+          <li><button class="btn-category">Humans</button></li>
+          <li><button class="btn-category">Games</button></li>
+          <li><button class="btn-category">Computers</button></li>
+          <li><button class="btn-category">Comedies</button></li>
+          <li><button class="btn-category">Politics</button></li>
+          <li><button class="btn-category">Fashions</button></li>
+          <li><button class="btn-category">Cooking</button></li>
+          <li><button class="btn-category">Apartments</button></li>
+          <li><button class="btn-category">Travelling</button></li>
+          <li><button class="btn-category">Travelling</button></li>
+          <li><button class="btn-category">Travelling</button></li>
+        </ul>
+      </section>
+      <section class="roundabout">
+        <ul class="roundabout__list">
+          <li class="roundabout__item">
+            <div class="video-player">
+              <img src="./images/big-cat.jpg" />
+              <p class="duration">12:00:36</p>
+              <div class="hide-video-box">
+                <svg class="icon">
+                  <use href="./images/svg/symbol-defs.svg#icon-cat-foot"></use>
+                </svg>
+              </div>
+            </div>
+            <div class="description">
+              <img src="./images/avatar1.png" alt="avatar" class="avatar" />
+              <div class="box-for-title">
+                <a href="/" class="video-title">Where have all the cats hide</a>
+                <p class="cat-name">NaNa</p>
+              </div>
+              <p class="reactions">Reactions</p>
+            </div>
+          </li>
+          <li class="roundabout__item">
+            <div class="video-player">
+              <img src="./images/big-cat.jpg" />
+              <p class="duration">12:00:36</p>
+              <div class="hide-video-box">
+                <svg class="icon">
+                  <use href="./images/svg/symbol-defs.svg#icon-cat-foot"></use>
+                </svg>
+              </div>
+            </div>
+            <div class="description">
+              <img src="./images/avatar1.png" alt="avatar" class="avatar" />
+              <div class="box-for-title">
+                <a href="/" class="video-title">Where have all the cats hide</a>
+                <p class="cat-name">NaNa</p>
+              </div>
+              <p class="reactions">Reactions</p>
+            </div>
+          </li>
+          <li class="roundabout__item">
+            <div class="video-player">
+              <img src="./images/big-cat.jpg" />
+              <p class="duration">12:00:36</p>
+              <div class="hide-video-box">
+                <svg class="icon">
+                  <use href="./images/svg/symbol-defs.svg#icon-cat-foot"></use>
+                </svg>
+              </div>
+            </div>
+            <div class="description">
+              <img src="./images/avatar1.png" alt="avatar" class="avatar" />
+              <div class="box-for-title">
+                <a href="/" class="video-title">Where have all the cats hide</a>
+                <p class="cat-name">NaNa</p>
+              </div>
+              <p class="reactions">Reactions</p>
+            </div>
+          </li>
+          <li class="roundabout__item">
+            <div class="video-player">
+              <img src="./images/big-cat.jpg" />
+              <p class="duration">12:00:36</p>
+              <div class="hide-video-box">
+                <svg class="icon">
+                  <use href="./images/svg/symbol-defs.svg#icon-cat-foot"></use>
+                </svg>
+              </div>
+            </div>
+            <div class="description">
+              <img src="./images/avatar1.png" alt="avatar" class="avatar" />
+              <div class="box-for-title">
+                <a href="/" class="video-title">Where have all the cats hide</a>
+                <p class="cat-name">NaNa</p>
+              </div>
+              <p class="reactions">Reactions</p>
+            </div>
+          </li>
+          <li class="roundabout__item">
+            <div class="video-player">
+              <img src="./images/big-cat.jpg" />
+              <p class="duration">12:00:36</p>
+              <div class="hide-video-box">
+                <svg class="icon">
+                  <use href="./images/svg/symbol-defs.svg#icon-cat-foot"></use>
+                </svg>
+              </div>
+            </div>
+            <div class="description">
+              <img src="./images/avatar1.png" alt="avatar" class="avatar" />
+              <div class="box-for-title">
+                <a href="/" class="video-title">Where have all the cats hide</a>
+                <p class="cat-name">NaNa</p>
+              </div>
+              <p class="reactions">Reactions</p>
+            </div>
+          </li>
+        </ul>
+      </section>
+      <section class="video">
+        <ul class="video-list">
+          <li class="video-item">
+            <div class="video-player">
+              <img src="./images/big-cat.jpg" />
+              <p class="live">LIVE</p>
+              <p class="duration">12:00:36</p>
+              <div class="hide-video-box">
+                <svg class="icon">
+                  <use href="./images/svg/symbol-defs.svg#icon-cat-foot"></use>
+                </svg>
+              </div>
+            </div>
+            <div class="video-description">
+              <img src="./images/avatar1.png" alt="avatar" class="avatar" />
+              <div class="box-for-title">
+                <a href="/" class="video-title">Where have all the cats hide</a>
+                <p class="cat-name">NaNa</p>
+              </div>
+              <button class="icon-btn">
+                <svg class="icon">
+                  <use href="./images/svg/symbol-defs.svg#icon-menu"></use>
+                </svg>
+              </button>
+            </div>
+          </li>
+          <li class="video-item">
+            <div class="video-player">
+              <img src="./images/big-cat.jpg" />
+              <p class="live">LIVE</p>
+              <p class="duration">12:00:36</p>
+              <div class="hide-video-box">
+                <svg class="icon">
+                  <use href="./images/svg/symbol-defs.svg#icon-cat-foot"></use>
+                </svg>
+              </div>
+            </div>
+            <div class="video-description">
+              <img src="./images/avatar1.png" alt="avatar" class="avatar" />
+              <div class="box-for-title">
+                <a href="/" class="video-title">Where have all the cats hide</a>
+                <p class="cat-name">NaNa</p>
+              </div>
+              <button class="icon-btn">
+                <svg class="icon">
+                  <use href="./images/svg/symbol-defs.svg#icon-menu"></use>
+                </svg>
+              </button>
+            </div>
+          </li>
+          <li class="video-item">
+            <div class="video-player">
+              <img src="./images/big-cat.jpg" />
+              <p class="live">LIVE</p>
+              <p class="duration">12:00:36</p>
+              <div class="hide-video-box">
+                <svg class="icon">
+                  <use href="./images/svg/symbol-defs.svg#icon-cat-foot"></use>
+                </svg>
+              </div>
+            </div>
+            <div class="video-description">
+              <img src="./images/avatar1.png" alt="avatar" class="avatar" />
+              <div class="box-for-title">
+                <a href="/" class="video-title">Where have all the cats hide</a>
+                <p class="cat-name">NaNa</p>
+              </div>
+              <button class="icon-btn">
+                <svg class="icon">
+                  <use href="./images/svg/symbol-defs.svg#icon-menu"></use>
+                </svg>
+              </button>
+            </div>
+          </li>
+          <li class="video-item">
+            <div class="video-player">
+              <img src="./images/big-cat.jpg" />
+              <p class="live">LIVE</p>
+              <p class="duration">12:00:36</p>
+              <div class="hide-video-box">
+                <svg class="icon">
+                  <use href="./images/svg/symbol-defs.svg#icon-cat-foot"></use>
+                </svg>
+              </div>
+            </div>
+            <div class="video-description">
+              <img src="./images/avatar1.png" alt="avatar" class="avatar" />
+              <div class="box-for-title">
+                <a href="/" class="video-title">Where have all the cats hide</a>
+                <p class="cat-name">NaNa</p>
+              </div>
+              <button class="icon-btn">
+                <svg class="icon">
+                  <use href="./images/svg/symbol-defs.svg#icon-menu"></use>
+                </svg>
+              </button>
+            </div>
+          </li>
+          <li class="video-item">
+            <div class="video-player">
+              <img src="./images/big-cat.jpg" />
+              <p class="live">LIVE</p>
+              <p class="duration">12:00:36</p>
+              <div class="hide-video-box">
+                <svg class="icon">
+                  <use href="./images/svg/symbol-defs.svg#icon-cat-foot"></use>
+                </svg>
+              </div>
+            </div>
+            <div class="video-description">
+              <img src="./images/avatar1.png" alt="avatar" class="avatar" />
+              <div class="box-for-title">
+                <a href="/" class="video-title">Where have all the cats hide</a>
+                <p class="cat-name">NaNa</p>
+              </div>
+              <button class="icon-btn">
+                <svg class="icon">
+                  <use href="./images/svg/symbol-defs.svg#icon-menu"></use>
+                </svg>
+              </button>
+            </div>
+          </li>
+          <li class="video-item">
+            <div class="video-player">
+              <img src="./images/big-cat.jpg" />
+              <p class="live">LIVE</p>
+              <p class="duration">12:00:36</p>
+              <div class="hide-video-box">
+                <svg class="icon">
+                  <use href="./images/svg/symbol-defs.svg#icon-cat-foot"></use>
+                </svg>
+              </div>
+            </div>
+            <div class="video-description">
+              <img src="./images/avatar1.png" alt="avatar" class="avatar" />
+              <div class="box-for-title">
+                <a href="/" class="video-title">Where have all the cats hide</a>
+                <p class="cat-name">NaNa</p>
+              </div>
+              <button class="icon-btn">
+                <svg class="icon">
+                  <use href="./images/svg/symbol-defs.svg#icon-menu"></use>
+                </svg>
+              </button>
+            </div>
+          </li>
+          <li class="video-item">
+            <div class="video-player">
+              <img src="./images/big-cat.jpg" />
+              <p class="live">LIVE</p>
+              <p class="duration">12:00:36</p>
+              <div class="hide-video-box">
+                <svg class="icon">
+                  <use href="./images/svg/symbol-defs.svg#icon-cat-foot"></use>
+                </svg>
+              </div>
+            </div>
+            <div class="video-description">
+              <img src="./images/avatar1.png" alt="avatar" class="avatar" />
+              <div class="box-for-title">
+                <a href="/" class="video-title">Where have all the cats hide</a>
+                <p class="cat-name">NaNa</p>
+              </div>
+              <button class="icon-btn">
+                <svg class="icon">
+                  <use href="./images/svg/symbol-defs.svg#icon-menu"></use>
+                </svg>
+              </button>
+            </div>
+          </li>
+        </ul>
+      </section>
+      <footer class="footer">
+        <p class="footer__text">Inspired by Kittisaurus</p>
+        <svg class="footer__icon">
+          <use href="./images/svg/symbol-defs.svg#icon-youtube"></use>
+        </svg>
+      </footer>
+    </main>
+  </body>
 </html>
